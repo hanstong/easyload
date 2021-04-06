@@ -18,17 +18,14 @@ setup(
     # 以下均为可选参数
     long_description="",  # 长描述
     url='https://github.com/pypa/sampleproject',  # 主页链接
-    author='Shoemaker',  # 作者名
+    author='shoe-maker',  # 作者名
     author_email='tonghanshuang.thu@gmail.com',  # 作者邮箱
     python_requires='>=3.6',
     classifiers=[
         'Development Status :: 3 - Alpha',  # 当前开发进度等级（测试版，正式版等）
-
         'Intended Audience :: Developers',  # 模块适用人群
         'Topic :: Software Development :: Build Tools',  # 给模块加话题标签
-
         'License :: OSI Approved :: MIT License',  # 模块的license
-
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
@@ -38,7 +35,7 @@ setup(
     install_requires=['xlwt','numpy','pandas'],  # 依赖模块
 
     project_urls={  # 项目相关的额外链接
-        'Bug Reports': 'https://github.com/pypa/sampleproject/issues',
-        'Source': 'https://github.com/pypa/sampleproject/',
+        'Bug Reports': 'https://github.com/shoe-maker/easyload/issues',
+        'Source': 'https://github.com/shoe-maker/easyload/',
     },
 )
