@@ -1,8 +1,8 @@
-# easyload
+## easyload
 Loading and Saving data made easy！
 
-# support data type
+### 1. support data type
 json, excel, csv, txt, npy, pkl, sql
 
-# how to install
+### 2. how to install
 pip install easyload
