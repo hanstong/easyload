@@ -10,15 +10,16 @@ from setuptools import setup
 setup(
     # 以下为必需参数
     name='easyload',  # 模块名
-    version='1.0.2',  # 当前版本
+    version='1.0.4',  # 当前版本
     description='A Python library for loading multiple types of data',  # 简短描述
     py_modules=["my_module"],  # 单文件模块写法
     # ckages=find_packages(exclude=['contrib', 'docs', 'tests']),  # 多文件模块写法
 
     # 以下均为可选参数
     long_description="A Python library for loading multiple types of data. "
-                     "github : https://github.com/shoe-maker/easyload"
-                     "Support Data Type: json, excel, csv, txt, npy, pkl, sql.",  # 长描述
+                     "Github Link: https://github.com/shoe-maker/easyload. "
+                     "Support Data Type: json, excel, csv, txt, npy, pkl, sql. \n",  # 长描述
+
     url='https://github.com/shoe-maker/easyload',  # 主页链接
     author='ths_lmj',  # 作者名
     author_email='tonghanshuang.thu@gmail.com',  # 作者邮箱
