@@ -43,7 +43,6 @@ def load_excel(path, sheetname=None):
         else:
             return pd.read_excel(path, index_col=False, header=0, sheetname=sheetname, engine='openpyxl')
 
-
 def load_csv(path, head=True, header_list=None, delimiter=None, encoding=None):
     if head:
         try:
