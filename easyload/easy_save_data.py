@@ -9,7 +9,7 @@ import pickle
 
 import numpy as np
 
-from src.built_excel import BuildStyleTable
+from easyload.built_excel import BuildStyleTable
 
 
 def save_pkl(path, data):
