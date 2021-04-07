@@ -7,6 +7,35 @@
 
 from setuptools import setup
 
+LONGDOC = """
+easyload
+=====
+
+A Python library for loading multiple types of data
+
+完整文档见 ``README.md``
+
+GitHub: https://github.com/shoe-maker/easyload
+
+特点
+====
+
+-  支持不同类型数据的加载与保存：
+   -  Support Data Type: json, excel, csv, txt, npy, pkl, sql.
+
+安装说明
+========
+
+代码对 Python 3 兼容
+
+-  全自动安装： ``easy_install easyload`` 或者 ``pip install easyload`` / ``pip3 install easyload``
+-  半自动安装：先下载 https://pypi.python.org/pypi/easyload/ ，解压后运行
+   python setup.py install
+-  手动安装：将 easyload 目录放置于当前目录或者 site-packages 目录
+-  通过 ``import easyload`` 来引用
+
+"""
+
 setup(
     # 以下为必需参数
     name='easyload',  # 模块名
@@ -16,9 +45,7 @@ setup(
     # ckages=find_packages(exclude=['contrib', 'docs', 'tests']),  # 多文件模块写法
 
     # 以下均为可选参数
-    long_description="A Python library for loading multiple types of data. "
-                     "Github Link: https://github.com/shoe-maker/easyload. "
-                     "Support Data Type: json, excel, csv, txt, npy, pkl, sql. \n",  # 长描述
+    long_description=LONGDOC,  # 长描述
 
     url='https://github.com/shoe-maker/easyload',  # 主页链接
     author='ths_lmj',  # 作者名
@@ -33,6 +60,8 @@ setup(
     ],
     keywords='easy load data',  # 模块的关键词，使用空格分割
     install_requires=['xlwt','numpy','pandas'],  # 依赖模块
+    packages=['easyload'],
+    package_dir={'easyload': 'easyload'},
     project_urls={  # 项目相关的额外链接
         'Bug Reports': 'https://github.com/shoe-maker/easyload/issues',
         'Source': 'https://github.com/shoe-maker/easyload/',
