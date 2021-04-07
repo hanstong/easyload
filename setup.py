@@ -27,11 +27,16 @@ Installation
 The code is Python 3 compatible
 
 -  Fully automatic installation: ``easy_install easyload`` or ``pip install easyload`` / ``pip3 install easyload``
--  Semi-automatic installation: download https://pypi.python.org/pypi/easyload/ , unzip and run
-   python setup.py install
+-  Semi-automatic installation: download https://pypi.python.org/pypi/easyload/ , unzip and run python setup.py install
 -  Manual installation: Place easyload directory in the current directory or site-packages directory
 -  use ``import easyload`` to import
 """
+
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     # 以下为必需参数
@@ -42,8 +47,8 @@ setup(
     # ckages=find_packages(exclude=['contrib', 'docs', 'tests']),  # 多文件模块写法
 
     # 以下均为可选参数
-    long_description=LONGDOC,  # 长描述
-
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/shoe-maker/easyload',  # 主页链接
     author='Hanshuang Tong',  # 作者名
     author_email='tonghanshuang.thu@gmail.com',  # 作者邮箱
