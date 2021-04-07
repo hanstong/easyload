@@ -16,6 +16,7 @@ The code is Python 3 compatible
 -  Manual installation: Place easyload directory in the current directory or site-packages directory
 -  use ``import easyload`` to import
 
+
 Quick start
 ========
 ```python
