@@ -39,7 +39,7 @@ GitHub: https://github.com/shoe-maker/easyload
 setup(
     # 以下为必需参数
     name='easyload',  # 模块名
-    version='1.0.4',  # 当前版本
+    version='1.0.5',  # 当前版本
     description='A Python library for loading multiple types of data',  # 简短描述
     py_modules=["my_module"],  # 单文件模块写法
     # ckages=find_packages(exclude=['contrib', 'docs', 'tests']),  # 多文件模块写法
