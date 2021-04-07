@@ -34,13 +34,11 @@ def save_excel(path, data, format=False):
         all_diagnosis_table.build_sheet("Sheet1", a_d, style_dict, [])
         all_diagnosis_table.workbook.save(path)
 
-
 def save_txt(path, data):
     with open(path, "w") as f:
         for i in data:
             f.writelines(i)
             f.writelines("\n")
-
 
 def save_json(path, data, visual_only=False):
     if visual_only:
@@ -48,7 +46,6 @@ def save_json(path, data, visual_only=False):
     json_str = json.dumps(data, indent=4, ensure_ascii=False)
     with open(path, 'w', encoding='utf-8') as json_file:
         json_file.write(json_str)
-
 
 def save_npy(path, data):
     np.save(path, data)
