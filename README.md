@@ -13,7 +13,7 @@ The code is Python 3 compatible
 
 -  Fully automatic installation: ``easy_install easyload`` or ``pip install easyload`` / ``pip3 install easyload``
 -  Semi-automatic installation: download https://pypi.python.org/pypi/easyload/ , unzip and run python setup.py install
--  Manual installation: Place easyload directory in the current directory or site-packages directory
+-  Manual installation: place easyload directory in the current directory or site-packages directory
 -  use ``import easyload`` to import
 
 
