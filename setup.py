@@ -48,7 +48,7 @@ setup(
     long_description=LONGDOC,  # 长描述
 
     url='https://github.com/shoe-maker/easyload',  # 主页链接
-    author='ths_lmj',  # 作者名
+    author='Hanshuang Tong',  # 作者名
     author_email='tonghanshuang.thu@gmail.com',  # 作者邮箱
     python_requires='>=3.6',
     classifiers=[
