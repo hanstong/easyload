@@ -13,27 +13,24 @@ easyload
 
 A Python library for loading multiple types of data
 
-完整文档见 ``README.md``
+For complete documentation, see ``README.md``
 
 GitHub: https://github.com/shoe-maker/easyload
 
-特点
+Main Features
 ====
-
--  支持不同类型数据的加载与保存：
+-  A Python library for loading multiple types of data：
    -  Support Data Type: json, excel, csv, txt, npy, pkl, sql.
 
-安装说明
+Installation
 ========
+The code is Python 3 compatible
 
-代码对 Python 3 兼容
-
--  全自动安装： ``easy_install easyload`` 或者 ``pip install easyload`` / ``pip3 install easyload``
--  半自动安装：先下载 https://pypi.python.org/pypi/easyload/ ，解压后运行
+-  Fully automatic installation: ``easy_install easyload`` or ``pip install easyload`` / ``pip3 install easyload``
+-  Semi-automatic installation: download https://pypi.python.org/pypi/easyload/ , unzip and run
    python setup.py install
--  手动安装：将 easyload 目录放置于当前目录或者 site-packages 目录
--  通过 ``import easyload`` 来引用
-
+-  Manual installation: Place easyload directory in the current directory or site-packages directory
+-  use ``import easyload`` to import
 """
 
 setup(
