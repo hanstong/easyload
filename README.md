@@ -18,3 +18,13 @@ A Python library for loading multiple types of data
    python setup.py install
 -  手动安装：将 easyload 目录放置于当前目录或者 site-packages 目录
 -  通过 ``import easyload`` 来引用
+
+代码示例
+========
+```python
+# encoding=utf-8
+import easyload
+load_file_path, save_file_path = "", ""
+json_data = easyload.load_json(load_file_path)
+easyload.save_json(save_file_path,json_data)
+```
