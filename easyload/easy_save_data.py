@@ -49,3 +49,10 @@ def save_json(path, data, visual_only=False):
 
 def save_npy(path, data):
     np.save(path, data)
+
+# def save_sql(path):
+#     sql = open(path, 'r', encoding='utf8')
+#     sqltxt = sql.readlines()
+#     sql.close()
+#     sql = "".join(sqltxt)
+#     return sql

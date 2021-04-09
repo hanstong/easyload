@@ -31,7 +31,8 @@ The code is Python 3 compatible
 -  Manual installation: Place easyload directory in the current directory or site-packages directory
 -  use ``import easyload`` to import
 """
-
+# python setup.py sdist
+# twine upload dist/*
 
 # read the contents of your README file
 from os import path
@@ -42,7 +43,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
     # 以下为必需参数
     name='easyload',  # 模块名
-    version='1.0.5',  # 当前版本
+    version='1.0.6',  # 当前版本
     description='A Python library for loading multiple types of data',  # 简短描述
     py_modules=["my_module"],  # 单文件模块写法
     # ckages=find_packages(exclude=['contrib', 'docs', 'tests']),  # 多文件模块写法

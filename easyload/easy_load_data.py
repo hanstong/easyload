@@ -5,11 +5,28 @@
 # @Email    :tonghanshuang.thu@gmail.com
 # @Software :PyCharm
 import json
+import os
 import pickle
 
 import numpy as np
 import pandas as pd
 
+def load(path):
+    ext = os.path.splitext(path)[1][1:]
+    if ext == "pkl":
+        return load_pkl(path)
+    elif ext == "json":
+        return load_json(path)
+    elif ext == "xls" or ext == "xlsx":
+        return load_excel(path)
+    elif ext == "csv":
+        return load_csv(path)
+    elif ext == "txt":
+        return load_txt(path)
+    elif ext == "npy":
+        return load_npy(path)
+    elif ext == "sql":
+        return load_sql(path)
 
 def load_pkl(path):
     return pickle.load(file=open(path, "rb+"))

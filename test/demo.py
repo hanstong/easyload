@@ -6,6 +6,9 @@
 # @Software :PyCharm
 import easyload
 
-# sys.path.append("../")
+json_path = "../test_input.json"
+csv_path = "../test_input.json"
+print(easyload.load(json_path))
+
 path = ""
 print(easyload.load_json(path))

@@ -6,6 +6,9 @@
 # @Software :PyCharm
 from easyload import easy_load_data, easy_save_data
 
+# all
+load = easy_load_data.load
+
 # json
 load_json = easy_load_data.load_json
 save_json = easy_save_data.save_json

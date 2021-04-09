@@ -22,7 +22,13 @@ Quick start
 ```python
 # encoding=utf-8
 import easyload
-load_file_path, save_file_path = "", ""
-json_data = easyload.load_json(load_file_path)
-easyload.save_json(save_file_path,json_data)
+
+# use easyload to load every file
+load_file_path= ""
+data = easyload.load(load_file_path)
+
+# load json file
+load_json_file_path, save_json_file_path = " ", " "
+json_data = easyload.load_json(load_json_file_path)
+easyload.save_json(save_json_file_path,json_data)
 ```
